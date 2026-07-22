@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Звонок в кафе Амидея</title>
-    <!-- Автоматический запуск звонка -->
-    <meta http-equiv="refresh" content="0; url=tel:+79780716660">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Звонок в кафе «Амидея»</title>
+<meta http-equiv="refresh" content="0; url=tel:+79780716660">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .font-display { font-family: 'Cormorant Garamond', serif; }
+  .font-logo { font-family: 'Marck Script', cursive; }
+  @keyframes pulse-ring {
+    0% { box-shadow: 0 0 0 0 rgba(200,90,67,0.35); }
+    70% { box-shadow: 0 0 0 16px rgba(200,90,67,0); }
+    100% { box-shadow: 0 0 0 0 rgba(200,90,67,0); }
+  }
+  .ring-pulse { animation: pulse-ring 1.8s ease-out infinite; }
+</style>
 </head>
-<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
-    <h2>Звоним в кафе «Амидея»...</h2>
-    <p>Если вызов не начался автоматически, нажмите на кнопку ниже:</p>
-    <a href="tel:+79780716660" style="font-size: 18px; padding: 10px 20px; background: #ff4757; color: white; text-decoration: none; border-radius: 5px; display: inline-block;">Позвонить сейчас</a>
+<body class="bg-[#F9F6F0] text-zinc-800 m-0 min-h-screen flex items-center justify-center px-4">
+
+  <div class="max-w-sm w-full text-center py-14">
+
+    <p class="font-logo text-3xl text-[#C85A43] mb-8">Амидея</p>
+
+    <div class="ring-pulse w-20 h-20 rounded-full bg-[#C85A43] flex items-center justify-center text-3xl mx-auto mb-6">
+      📞
+    </div>
+
+    <h1 class="font-display text-2xl md:text-3xl text-zinc-800 mb-3">Звоним в кафе «Амидея»…</h1>
+    <p class="text-zinc-500 text-sm mb-8 leading-relaxed">
+      Вызов должен начаться автоматически. Если этого не произошло — нажмите на кнопку ниже.
+    </p>
+
+    <a href="tel:+79780716660" class="block w-full text-center bg-[#C85A43] text-white font-bold text-lg py-4 rounded-2xl shadow-lg shadow-[#C85A43]/25 transition-all duration-300 hover:scale-[1.02] hover:bg-[#B84E38] active:scale-[0.98]">
+      Позвонить сейчас
+    </a>
+
+    <p class="text-xs text-zinc-400 mt-6">+7 (978) 071-66-60 · Ежедневно 10:00–22:00</p>
+  </div>
+
 </body>
 </html>
